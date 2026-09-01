@@ -54,7 +54,7 @@ The contents of `results/` (simulation outputs, trained neural density estimator
 
 To fetch this data into a local checkout of this repository:
 ```
-pip install -U huggingface_hub[cli]
+pip install -U "huggingface_hub[cli]"
 hf download mackelab/STG_energy --repo-type dataset --local-dir results --exclude ".gitattributes" --exclude "README.md"
 ```
 This downloads the dataset's files directly into `results/`, matching the original layout (the `--exclude` flags skip the dataset repo's own `.gitattributes` and dataset card, which aren't part of the actual data). No Hugging Face account or token is required since the dataset is public.
